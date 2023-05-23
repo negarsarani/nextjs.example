@@ -1,4 +1,8 @@
+import { useRouter } from "next/dist/client/router";
+
 function ProductDetail(params) {
-  return <div>product Detail</div>;
+  const router = useRouter()
+
+  return <div>product Detail {router.query.id}</div>;
 }
 export default ProductDetail;
